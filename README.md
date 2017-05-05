@@ -1,17 +1,17 @@
-## spi-device
+## spi-device-alpine
 
 SPI serial bus access with **Node.js** on Linux boards like the Raspberry
 Pi or BeagleBone. All methods have asynchronous and synchronous forms.
 
 ***This version has been forked from the original by fivdi and modified so that it builds on Apline Linux. It has been published on NPM as spi-device-alpine.***
 
-spi-device supports Node.js v0.10, v0.12, v4, v6 and v7.
+spi-device-alpine supports Node.js v0.10, v0.12, v4, v6 and v7.
 
 ## Contents
 
- * [Installation](https://github.com/fivdi/spi-device#installation)
- * [Usage](https://github.com/fivdi/spi-device#usage)
- * [API documentation](https://github.com/fivdi/spi-device#api-documentation)
+ * [Installation](https://github.com/yutter/spi-device-alpine#installation)
+ * [Usage](https://github.com/yutter/spi-device-alpine#usage)
+ * [API documentation](https://github.com/yutter/spi-device-alpine#api-documentation)
 
 ## Installation
 
@@ -27,7 +27,7 @@ channel 5 on an MCP3008 SPI A/D converter.
 <img src="https://raw.githubusercontent.com/fivdi/spi-device/master/example/pi-mcp3008-tmp36.png">
 
 ```js
-var spi = require('spi-device'),
+var spi = require('spi-device-alpine'),
   mcp3008;
 
 // The MCP3008 is on bus 0 and it's device 0
@@ -117,7 +117,7 @@ completion callback is called.
 - busNumber - the number of the SPI bus to open, 0 for `/dev/spidev0.n`, 1 for `/dev/spidev1.n`, ...
 - deviceNumber - the number of the SPI device to open, 0 for `/dev/spidevn.0`, 1 for `/dev/spidevn.1`, ...
 - options - an optional object specifying device
-[configuration options](https://github.com/fivdi/spi-device#configuration-options)
+[configuration options](https://github.com/yutter/spi-device-alpine#configuration-options)
 
 Synchronous open. Returns a new SpiDevice object.
 
@@ -126,7 +126,7 @@ Synchronous open. Returns a new SpiDevice object.
 - cb - completion callback
 
 Asynchronous message transfer. An SPI
-[message](https://github.com/fivdi/spi-device#message) is an array of one or
+[message](https://github.com/yutter/spi-device-alpine#message) is an array of one or
 more read+write transfers. The completion callback gets two arguments (err,
 message). Returns this.
 
@@ -134,38 +134,38 @@ message). Returns this.
 - message - an array of one or more read+write transfers
 
 Synchronous message transfer. An SPI
-[message](https://github.com/fivdi/spi-device#message) is an array of one or
+[message](https://github.com/yutter/spi-device-alpine#message) is an array of one or
 more read+write transfers. Returns this.
 
 ### device.getOptions(cb)
 - cb - completion callback
 
 Asynchronously read device
-[configuration options](https://github.com/fivdi/spi-device#configuration-options).
+[configuration options](https://github.com/yutter/spi-device-alpine#configuration-options).
 The completion callback gets two arguments (err, options) where options is an
 object describing the device configuration options. Returns this.
 
 ### device.getOptionsSync()
 
 Synchronously read device
-[configuration options](https://github.com/fivdi/spi-device#configuration-options).
+[configuration options](https://github.com/yutter/spi-device-alpine#configuration-options).
 Returns an object describing the device configuration options.
 
 ### device.setOptions(options, cb)
 - options - an object specifying device
-[configuration options](https://github.com/fivdi/spi-device#configuration-options)
+[configuration options](https://github.com/yutter/spi-device-alpine#configuration-options)
 - cb - completion callback
 
 Asynchronously write device
-[configuration options](https://github.com/fivdi/spi-device#configuration-options).
+[configuration options](https://github.com/yutter/spi-device-alpine#configuration-options).
 The completion callback gets one argument (err). Returns this.
 
 ### device.setOptionsSync(options)
 - options - an object specifying device
-[configuration options](https://github.com/fivdi/spi-device#configuration-options)
+[configuration options](https://github.com/yutter/spi-device-alpine#configuration-options)
 
 Synchronously write device
-[configuration options](https://github.com/fivdi/spi-device#configuration-options).
+[configuration options](https://github.com/yutter/spi-device-alpine#configuration-options).
 Returns this.
 
 ### device.close(cb)
