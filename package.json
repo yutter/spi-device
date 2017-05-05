@@ -1,7 +1,7 @@
 {
   "name": "spi-device-alpine",
-  "version": "1.0.0",
-  "description": "SPI serial bus access with Node.js",
+  "version": "1.0.1",
+  "description": "SPI serial bus access with Node.js for Alpine Linux",
   "main": "spi-device.js",
   "directories": {
     "example": "example",
@@ -13,7 +13,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/yutter/spi-device.git"
+    "url": "https://github.com/yutter/spi-device-alpine.git"
   },
   "engines": {
     "node": ">=0.10.0"
@@ -32,6 +32,9 @@
     "spi"
   ],
   "author": "fivdi",
+  "contributors": [
+    "yutter"
+  ]
   "license": "MIT",
   "gypfile": true
 }
