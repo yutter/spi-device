@@ -1,6 +1,7 @@
 #include <errno.h>
 #include <nan.h>
 #include <sys/ioctl.h>
+#include <linux/ioctl.h>
 #include <linux/spi/spidev.h>
 #include "spidevice.h"
 #include "transfer.h"
