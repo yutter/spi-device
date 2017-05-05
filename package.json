@@ -1,6 +1,6 @@
 {
-  "name": "spi-device",
-  "version": "0.2.6",
+  "name": "spi-device-alpine",
+  "version": "1.0.0",
   "description": "SPI serial bus access with Node.js",
   "main": "spi-device.js",
   "directories": {
@@ -13,7 +13,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/fivdi/spi-device.git"
+    "url": "https://github.com/yutter/spi-device.git"
   },
   "engines": {
     "node": ">=0.10.0"
@@ -23,7 +23,7 @@
     "nan": "~2.5.0"
   },
   "keywords": [
-    "linux",
+    "alpine-linux",
     "beaglebone",
     "pi",
     "rpi",
