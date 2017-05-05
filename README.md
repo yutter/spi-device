@@ -16,7 +16,7 @@ spi-device supports Node.js v0.10, v0.12, v4, v6 and v7.
 ## Installation
 
 ```
-npm install spi-device
+npm install spi-device-alpine
 ```
 
 ## Usage
